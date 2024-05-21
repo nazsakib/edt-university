@@ -23,7 +23,7 @@ while (have_posts()) {
                 <a class="metabox__blog-home-link" href="<?php echo site_url('/blog'); ?>"><i class="fa fa-home"
                         aria-hidden="true"></i> Blog
                     Home</a>
-                <span class="metabox__main">Posted by <?php the_author_posts_link(); ?> on <?php the_date('F j, Y') ?> at
+                <span class="metabox__main">Posted by <?php the_author_posts_link(); ?> on <?php the_date('m/d/y') ?> at
                     <?php the_time(); ?> in
                     <?php echo get_the_category_list(', '); ?></span>
             </p>
