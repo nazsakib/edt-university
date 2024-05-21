@@ -50,7 +50,7 @@
             <?php
             $homePagePost = new WP_Query(
                 array(
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 2,
 
                 )
             );
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             <?php }
-
+            wp_reset_postdata();
             ?>
 
             <!-- <div class="event-summary">
@@ -99,7 +99,8 @@
                 </div>
             </div> -->
 
-            <p class="t-center no-margin"><a href="#" class="btn btn--yellow">View All Blog Posts</a></p>
+            <p class="t-center no-margin"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">View All
+                    Blog Posts</a></p>
         </div>
     </div>
 </div>
