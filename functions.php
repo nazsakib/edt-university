@@ -22,7 +22,7 @@ function edtUni_features()
     register_nav_menu('footerMenuOne', 'Footer Menu 1');
     register_nav_menu('footerMenuTwo', 'Footer Menu 2');
     add_theme_support('title-tag');
-    add_theme_support('post-thumbnail');
+    add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'edtUni_features');
 
