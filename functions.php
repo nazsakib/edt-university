@@ -15,13 +15,14 @@ function edtUni_files()
 add_action('wp_enqueue_scripts', 'edtUni_files');
 
 
-// title
+// features of edt uni
 function edtUni_features()
 {
     register_nav_menu('headerMenu', 'Header Menu');
     register_nav_menu('footerMenuOne', 'Footer Menu 1');
     register_nav_menu('footerMenuTwo', 'Footer Menu 2');
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnail');
 }
 add_action('after_setup_theme', 'edtUni_features');
 
