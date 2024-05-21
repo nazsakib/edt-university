@@ -64,6 +64,33 @@ function edtUni_post_types()
         )
     );
     register_post_type('program', $args);
+
+
+    //professor post type
+    $labels = array(
+        'name' => 'Professors',
+        'add_new_item' => 'Add New Professor',
+        'edit_item' => 'Edit Professor',
+        'all_items' => 'All Professors',
+        'singular_name' => 'Professor'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'menu_icon' => 'dashicons-businessman',
+        'show_in_rest' => true,
+        'taxonomies' => array(
+            'category',
+            'post_tag'
+        ),
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail'
+        )
+    );
+    register_post_type('professor', $args);
 }
 add_action('init', 'edtUni_post_types');
 
