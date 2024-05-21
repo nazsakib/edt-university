@@ -32,14 +32,21 @@
                 $homePageEvents->the_post(); ?>
                 <div class="event-summary">
                     <a class="event-summary__date t-center" href="<?php the_permalink(); ?>">
-                        <span class="event-summary__month"><?php the_time('M'); ?></span>
-                        <span class="event-summary__day"><?php the_time('d'); ?></span>
+                        <span class="event-summary__month"><?php ?></span>
+                        <span class="event-summary__day"><?php ?></span>
                     </a>
                     <div class="event-summary__content">
                         <h5 class="event-summary__title headline headline--tiny"><a
                                 href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                        <p><?php echo wp_trim_words(get_the_content(), 20); ?> <a href="<?php the_permalink(); ?>"
-                                class="nu gray">Learn more</a>
+                        <p>
+                            <?php
+                            if (has_excerpt()) {
+                                echo get_the_excerpt();
+                            } else {
+                                echo wp_trim_words(get_the_content(), 15);
+                            }
+                            ?>
+                            <a href="<?php the_permalink(); ?>" class="nu gray">Learn more</a>
                         </p>
                     </div>
                 </div>
@@ -70,7 +77,8 @@
                 </div>
             </div> -->
 
-            <p class="t-center no-margin"><a href="<?php echo site_url('/events'); ?>" class="btn btn--blue">View All
+            <p class="t-center no-margin"><a href="<?php echo get_post_type_archive_link('event'); ?>"
+                    class="btn btn--blue">View All
                     Events</a></p>
         </div>
     </div>
