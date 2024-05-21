@@ -12,6 +12,7 @@
             // the_archive_title();
             
             if (is_category()) {
+                echo "Archive:";
                 single_cat_title();
             }
             if (is_author()) {
