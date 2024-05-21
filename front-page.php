@@ -70,7 +70,8 @@
                 </div>
             </div> -->
 
-            <p class="t-center no-margin"><a href="#" class="btn btn--blue">View All Events</a></p>
+            <p class="t-center no-margin"><a href="<?php echo site_url('/events'); ?>" class="btn btn--blue">View All
+                    Events</a></p>
         </div>
     </div>
 
