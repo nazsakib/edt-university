@@ -17,6 +17,10 @@
     "@glidejs/glide": "^3.4.1",
     "@wordpress/scripts": "*",
     "axios": "^0.21.1",
+    "jquery": "^3.7.1",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.30"
   }
 }
