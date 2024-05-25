@@ -108,9 +108,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 class Search {
-  constructor() {
-    alert("hello i am search");
-  }
+  // 1 - descrive our object
+  constructor() {}
+
+  // 2. all events
+
+  // 3. methods ( function, action )
+  openOverlay() {}
+  closeOverlay() {}
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Search);
 
