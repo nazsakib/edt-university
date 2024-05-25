@@ -1,14 +1,4 @@
-<?php get_header();
-
-pageBanner(
-    array(
-        'title' => 'All Programs',
-        'subtitle' => 'Choose which subject you want to study!'
-    )
-
-);
-
-?>
+<?php get_header(); ?>
 
 <!-- banner -->
 <div class="page-banner">

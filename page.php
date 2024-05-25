@@ -7,9 +7,9 @@ while (have_posts()) {
 
     pageBanner(
         array(
-            'title' => 'Hello there! This is the title!',
-            'subtitle' => 'This is subtitle',
-            'photo' => 'https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            'title' => '',
+            'subtitle' => '',
+            'photo' => ''
         )
     );
 
