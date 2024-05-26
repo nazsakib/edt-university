@@ -1,6 +1,6 @@
 <?php
 
-// custom post type
+// custom post types
 function edtUni_post_types()
 {
     // event post type
