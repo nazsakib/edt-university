@@ -64,8 +64,6 @@
     </div>
 </footer>
 
-<?php wp_footer(); ?>
-
 <div class="search-overlay">
     <div class="search-overlay__top ">
         <div class="container">
@@ -75,6 +73,8 @@
         </div>
     </div>
 </div>
+
+<?php wp_footer(); ?>
 
 </body>
 
